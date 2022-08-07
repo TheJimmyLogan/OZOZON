@@ -484,7 +484,7 @@ background: linear-gradient(90deg, rgba(128,233,181,1) 0%, rgba(113,225,235,1) 1
     margin-top: 45px;
     padding: 16px;
     flex: 1;
-    background: rgba(204, 204, 204, 0.1);
+    background: white;
     border-radius: 10px;
     box-shadow: 0 0 25px rgb(0 0 0 / 25%);
 }

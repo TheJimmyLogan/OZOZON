@@ -25,17 +25,21 @@ body{
     align-items: center;
     justify-content: space-around;
     color: white;
+    flex-wrap: wrap;
+    padding: 8px;
 }
 
-.navigation ul{
+.nav-list{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     gap: 35px;
     list-style-type: none;
+    padding: 0;
 }
 
-.navigation ul a{
+.nav-list a{
     text-decoration: none;
     color: white;
 }
@@ -56,6 +60,10 @@ body{
     cursor: pointer;
 }
 
+.burger-menu{
+    display: none;
+}
+
 .btn-mobile button:hover{
     background: black;
 }
@@ -63,17 +71,22 @@ body{
 .btn-mobile {
     display: flex;
     align-items: center;
-    gap: 45px;
+    gap: 28px;
     padding: 8px;
     border-radius: 17px;
     border-color: white;
     color: white;
 }
 
+.nav-logo{
+    display: flex;
+    justify-content: center;
+}
+
 .hero{
     color: white;
     text-align: center;
-    padding: 195px;
+    padding: 10%;
 }
 
 .hero h1,
@@ -91,13 +104,14 @@ body{
 .aside{
     max-width: 720px;
     display: flex;
-    /* justify-content: space-around; */
+    justify-content: center;
     gap: 26px;
     align-items: flex-end;
     margin: auto;
     padding: 24px;
     border-radius: 12px;
     background: white;
+    flex-wrap: wrap;
 }
 
 .aside div{
@@ -169,6 +183,7 @@ background: linear-gradient(90deg, rgba(128,233,181,1) 0%, rgba(113,225,235,1) 1
     text-align: center;
     font-size: 20px;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 
@@ -198,6 +213,7 @@ background: linear-gradient(90deg, rgba(128,233,181,1) 0%, rgba(113,225,235,1) 1
 .two-text{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .interactive-img span{
@@ -213,6 +229,7 @@ background: linear-gradient(90deg, rgba(128,233,181,1) 0%, rgba(113,225,235,1) 1
 .interactive-img span:hover{
     transform: translateY(-5px);
     filter: drop-shadow(0px 5px 3px rgba(0,0,0,0.5));
+    opacity: 1;
 }
 
 .interactive-img span:before{
@@ -249,13 +266,17 @@ background: linear-gradient(90deg, rgba(128,233,181,1) 0%, rgba(113,225,235,1) 1
 
 .interactive-img{
     margin: auto;
-    width: 870px;
-    height: 490px;
+    /* width: 870px; */
+    /* height: 490px; */
     position: relative;
-    background: url(./image/pic2.jpg) no-repeat;
+    /* background: url(./image/pic2.jpg) no-repeat; */
     background-size: cover;
     border-radius: 40px;
 
+}
+
+.interactive-img img{
+    width: 100%;
 }
 
 .green-dot::before{
@@ -288,6 +309,7 @@ background: linear-gradient(90deg, rgba(128,233,181,1) 0%, rgba(113,225,235,1) 1
     display: flex;
     justify-content: center;
     gap: 60px;
+    flex-wrap: wrap;
 }
 
 .left-info,
@@ -305,13 +327,13 @@ background: linear-gradient(90deg, rgba(128,233,181,1) 0%, rgba(113,225,235,1) 1
 .two-discrepancies .right-info h2,
 .two-discrepancies .left-info h2{
     text-align: center;
-    font-size: 30px;
+    font-size: 18px;
     margin-top: 0;
 }
 
 .two-discrepancies .left-info,
 .two-discrepancies .right-info{
-    padding: 36px;
+    padding: 30px;
     background: rgba(204, 204, 204, 0.1);
     border-radius: 10px;
     box-shadow: 0 0 25px rgb(0 0 0 / 25%);
@@ -373,17 +395,20 @@ background: linear-gradient(90deg, rgba(128,233,181,1) 0%, rgba(113,225,235,1) 1
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-top: 235px; */
-    
+    flex-wrap: wrap;
 }
 
 .price-info h4{
     width: 150px;
     text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .price-info span{
-    color: rgb(71, 71, 71);
+    color: rgb(133, 133, 133);
 }
 
 .price-info h5{
@@ -399,18 +424,18 @@ background: linear-gradient(90deg, rgba(128,233,181,1) 0%, rgba(113,225,235,1) 1
 
 .nav-num{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     gap: 75px;
     padding: 64px 54px;
-    
+    flex-wrap: wrap;
 }
 
 .nav-num div h5{
     color: black;
     font-size: 25px;
     margin: 0;
-    
+    text-align: center;
 }
 
 .nav-num div h3{
@@ -432,25 +457,31 @@ background: linear-gradient(90deg, rgba(128,233,181,1) 0%, rgba(113,225,235,1) 1
     font-size: 15px;
     margin: 0;
     margin-top: 18px;
+    text-align: center;
 }
 
 .advantages-container h1{
     display: flex;
     justify-content: center;
     font-size: 35px;
+    z-index: 1;
+    position: relative;
 }
 
 .advantages-container{
+    position: relative;
     background: url(./image/pic3.jpg) no-repeat;
     background-size: cover;
-    padding: 80px 136px;
+    padding: 32px 96px;
     margin-top: 64px;
+    background-color: #f6f6f6;
 }
 
 .advantages{
     display: flex;
     justify-content: center;
     gap: 72px;
+    flex-wrap: wrap;
 }
 
 .advantages div{
@@ -458,9 +489,11 @@ background: linear-gradient(90deg, rgba(128,233,181,1) 0%, rgba(113,225,235,1) 1
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+    flex: 1;
+    z-index: 1;
 }
 
-.advantages h1{
+.advantages h3{
     font-size: 14px;
     text-align: center;
 }
@@ -473,20 +506,23 @@ background: linear-gradient(90deg, rgba(128,233,181,1) 0%, rgba(113,225,235,1) 1
 
 .payment{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 45px;
 }
 
 .payment .pay{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 45px;
     padding: 16px;
     flex: 1;
     background: white;
     border-radius: 10px;
     box-shadow: 0 0 25px rgb(0 0 0 / 25%);
+    max-width: 280px;
+    min-height: 120px;
 }
 
 .payment .pay h1{
@@ -500,12 +536,13 @@ background: linear-gradient(90deg, rgba(128,233,181,1) 0%, rgba(113,225,235,1) 1
 
 .info-container{
     display: flex;
-    padding: 30px 96px;
-    gap: 72px;
+    padding: 10%;
     margin-top: 45px;
     background: rgba(204, 204, 204, 0.1);
     border-radius: 10px;
     box-shadow: 0 0 25px rgb(0 0 0 / 25%);
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .info-container li a{
@@ -517,7 +554,8 @@ background: linear-gradient(90deg, rgba(128,233,181,1) 0%, rgba(113,225,235,1) 1
 }
 
 .info-container ol{
-    width: 100%;
+    flex: 1;
+    margin: 0;
 }
 
 .testimonials-container{
@@ -530,13 +568,16 @@ background: linear-gradient(90deg, rgba(128,233,181,1) 0%, rgba(113,225,235,1) 1
     display: flex;
     position: relative;
     gap: 10px;
-    padding: 40px 62px;
+    padding: 48px;
     margin: auto;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     border-radius: 10px;
     box-shadow: 0 0 25px rgb(0 0 0 / 25%);
     max-width: 1200px;
     background: white;
+}
+
+.review-text{
 }
 
 .arrow-left{
@@ -573,10 +614,15 @@ background: linear-gradient(90deg, rgba(128,233,181,1) 0%, rgba(113,225,235,1) 1
     font-size: 20px;
     margin-top: 0;
     color: #b1b6c3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px
 }
 
 .info-wall p{
-    font-size: 20px;
+    font-size: 16px;
+    overflow: auto;
+    max-height: 300px;
 }
 
 .clear-btn{
@@ -600,4 +646,100 @@ background: linear-gradient(90deg, rgba(128,233,181,1) 0%, rgba(113,225,235,1) 1
     background: white;
     border: none;
     cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+
+
+    .nav-num div h3{
+        text-align: center;
+    }
+    .burger-menu{
+        display: block;
+        border: none;
+        outline: none;
+        background: none;
+    }
+
+    .burger-menu img{
+        width: 24px;
+    }
+
+    .nav-logo{
+        justify-content: space-between;
+    }
+
+    .nav-list{
+        left: -100%;
+        position: absolute;
+        flex-direction: column;
+        background: #161616;
+        width: 100%;
+        gap: 0;
+        margin: 0;
+        padding: 0;
+        top: 0px;
+        transition: .5s all;
+        opacity: 0;
+        
+    }
+    .nav-list li{
+        padding: 12px;
+        width: 100%;
+        text-align: center;
+        border-bottom: rgba(128,233,181,1) solid 1px;
+    }
+
+
+
+    .nav-list.open{
+        left: 0;
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .nav-logo{
+        width: 100%;
+        text-align: center;
+        display: flex;
+    }
+
+
+
+    .info-wall h1{
+        font-size: 16px;
+    }
+
+   
+    .advantages-container h1{
+        font-size: 26px;
+    }
+
+    .interactive-img span{
+        opacity: 0.3;
+        font-size: 8px;
+    }
+
+    .hero h1,
+    .hero h2,
+    .hero h3{
+        font-size: 30px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1100px) {
+
+    .advantages-container{
+        background-image: none;
+        background: rgba(204, 204, 204, 0.1);
+        border-radius: 10px;
+        box-shadow: 0 0 25px rgb(0 0 0 / 25%);
+    }
+
+
 }

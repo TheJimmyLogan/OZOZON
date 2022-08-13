@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -15,15 +16,22 @@
         <section class="header-container">
             <section class="header">
                 <div class="navigation">
+                    <div class="nav-logo">
+                        <a href="#">
+                            <img src="./image/logo.png" alt="">
+                        </a>
+                        <button id="contain" class="burger-menu">
+                            <img src="./image/icons/burger-menu.svg" alt="">
+                        </button>
+                    </div>
 
-                    <ul>
-                        <li><a href="#"><img src="./image/logo.png" alt=""></a></li>
-                        <li><a href="#">Про уборки</a></li>
-                        <li><a href="#">Оформить заказ</a></li>
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Отзывы</a></li>
-                        <li><a href="#">F.A.Q.</a></li>
-                        <li><a href="#">Акции</a></li>
+                    <ul id="nav" class="nav-list">
+                        <li><a href="#proUborkiSection">Про уборки</a></li>
+                        <li><a href="#oformitZayavkuSection">Оформить заказ</a></li>
+                        <li><a href="#oNasSection">О нас</a></li>
+                        <li><a href="#otziviSection">Отзывы</a></li>
+                        <li><a href="#faqSection">F.A.Q.</a></li>
+                        <li><a href="#saleSection">Акции</a></li>
                     </ul>
 
                     <section class="btn-mobile">
@@ -41,7 +49,7 @@
 
             </div>
 
-            <div class="aside">
+            <div class="aside" id="oformitZayavkuSection">
                 <div>
                     <label for="">
                         <p>Тип уборки</p>
@@ -66,7 +74,7 @@
                 </button>
             </div>
 
-            <div class="offers">
+            <div id="saleSection" class="offers">
                 <h1>Закажи уборку на завтра прямо сейчас и получите СКИДКУ 15%</h1>
                 <h2>Промокод: <span>YESTERDAY</span></h2>
             </div>
@@ -76,7 +84,7 @@
 
 
         <div class="content">
-            <section class="base">
+            <section class="base" id="proUborkiSection">
                 <h1>Про уборки</h1>
             </section>
 
@@ -92,28 +100,28 @@
             </section>
 
             <section class="interactive-img">
+                <img src="./image/pic2.jpg" alt="">
                 <span class="green left" style="top: 25%;left: 25%">
                     Чистим зеркала и стеклянные поверхности
                 </span>
                 <span class="green left" style="top: 50%;left: 47.5%">
                     Протираем двери
                 </span>
-                <span class="green left" style="top:84%;left: 29%">
+                <span class="green left" style="bottom:16%;left: 29%">
                     Протираем все доступные поверхности
                 </span>
-                <span class="green right" style="top:89%;left: 57%; max-width: 90px;">
+                <span class="green right" style="bottom:11%;left: 57%; max-width: 90px;">
                     Протираем плинтусы
                 </span>
                 <span class="yellow left" style="top: 47%;left: 73%">
                     Расставляем обувь
                 </span>
-                <span class="yellow right" style="top: 62%;left: 58%">
+                <span class="yellow right" style="top: 62%;right: 42%">
                     Очищаем выключатели и дверные ручки
                 </span>
-                <span class="yellow left" style="top: 90%;left: 80%">
+                <span class="yellow left" style="bottom: 10%;right: 20%">
                     Моем пол и пылесосим коврики
                 </span>
-
             </section>
 
             <section class="two-text">
@@ -140,7 +148,7 @@
                     <section class="price-info">
                         <div>
                             <h4>
-                                Стоимость уборки:<span>Во всех комнатах</span>
+                                Стоимость уборки: <span> Во всех комнатах </span>
                             </h4>
                             <h5>1590 руб.</h5>
                         </div>
@@ -184,7 +192,7 @@
                 </div>
             </section>
 
-            <div class="box-container">
+            <div id="oNasSection" class="box-container">
                 <section class="nav-num">
                     <div>
                         <h5>Счетчик OZOZON</h5>
@@ -208,37 +216,37 @@
                 </section>
             </div>
 
-            <section class="advantages-container">
+            <section class="advantages-container id">
 
                 <h1>Вы обязательно останетесь долвольны, ведь мы...</h1>
 
                 <section class="advantages">
                     <div>
                         <img src="./image/icons/icons2.png" alt="">
-                        <h1>
+                        <h3>
                             Используем только уникальные экологические средства
-                        </h1>
+                        </h3>
                     </div>
 
                     <div>
                         <img src="./image/icons/icons3.png" alt="">
-                        <h1>
+                        <h3>
                             Отбираем только самых лучших клинеров
-                        </h1>
+                        </h3>
                     </div>
 
                     <div>
                         <img src="./image/icons/icons1.png" alt="">
-                        <h1>
+                        <h3>
                             Используем особую эффективную технологию уборки
-                        </h1>
+                        </h3>
                     </div>
 
                     <div>
                         <img src="./image/icons/icons4.png" alt="">
-                        <h1>
+                        <h3>
                             Очень любим наших клиентов и предоставляем скидки
-                        </h1>
+                        </h3>
                     </div>
 
                 </section>
@@ -247,7 +255,7 @@
         </div>
 
 
-        <section class="faq-container">
+        <section id="faqSection" class="faq-container">
             <div class="content">
                 <div class="title">
                     <h1>Часто задаваемые вопросы</h1>
@@ -309,7 +317,7 @@
                     <img src="./image/logo1.png" alt="">
                 </div>
 
-                <div>
+                <div id="otziviSection" class="review-text">
                     <h1> <span class="name-wall"> Олеся Воливач </span> 12 окт 2016 в 13:37 </h1>
                     <p>Мне посчастливилось стать первым клиентом Озозона, и могу смело сказать, что наши встречи будут
                         происходить с завидной периодичностью)
@@ -335,7 +343,8 @@
                         красота)
                         плюс порадовал ништячек в виде шоколадки))
 
-                        Надеюсь и желаю вам продолжать в том же духе, что и начали!)</p>
+                        Надеюсь и желаю вам продолжать в том же духе, что и начали!)
+                    </p>
 
                     <button class="clear-btn">Ответить</button>
 
